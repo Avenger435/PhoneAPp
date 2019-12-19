@@ -1,0 +1,104 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    /* background: #F1F1F1 !important; */
+    background: #fff !important;
+    font-family: verdana, 'LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif !important;
+    font-size: 12px;
+    line-height: 1.2;
+    /* color: #636e7b; */
+    overflow-x: hidden;
+}
+
+
+
+.headerbar {
+    background: #2E4A62;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+strong {
+    font-family: 'LatoBold';
+    font-weight: normal;
+}
+
+thead {
+    background: #2E4A62;
+}
+
+th {
+    text-align: center;
+    color: white;
+}
+
+th {
+    text-align: center;
+    color: white;
+}
+
+.main-scr {
+    overflow-y: scroll;
+    height: 700px;
+}
+
+/*=== FADE IN  ===*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/*=== Optional Delays, change values here  ===*/
+/* .fadeInClass {
+-webkit-animation-delay: 0.4s;
+-moz-animation-delay: 0.4s;
+animation-delay: 0.4s;
+} */
+
+/*=== Trigger  ===*/
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  /* -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; */
+}
+
+li:nth-child(N) > button {
+  animation-delay: [animation-duration * N]s;
+}
